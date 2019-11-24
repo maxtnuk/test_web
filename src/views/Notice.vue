@@ -1,7 +1,6 @@
 <template>
     <div>
         <hero></hero>
-        <basic-elements></basic-elements>
     </div>
 </template>
 <script>
