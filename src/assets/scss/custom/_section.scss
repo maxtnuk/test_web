@@ -196,15 +196,8 @@
         }
 
         .span-100 {
-            width: 0;
-            height: 0;
-
-            border-radius: 0%;
-
-            border-left: 100px solid transparent;
-            border-right: 100px solid transparent;
-
-            border-bottom: 100px solid black;
+            height: 100px;
+            width: 100px;
         }
 
         .span-75 {

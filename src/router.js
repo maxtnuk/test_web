@@ -4,10 +4,11 @@ import AppHeader from "./layout/AppHeader";
 import AppFooter from "./layout/AppFooter";
 
 
-import Business from "./views/Business.vue";
+import Notice from "./views/Notice.vue";
 import Portfolio from "./views/Portfolio.vue";
 import Introduce from "./views/Introduce.vue";
 import Location from "./views/Location.vue";
+import Home from "./views/Home.vue";
 import Profile from "./views/Profile.vue";
 
 Vue.use(Router);
@@ -15,12 +16,21 @@ Vue.use(Router);
 export default new Router({
   linkExactActiveClass: "active",
   routes: [
+      {
+          path: "/",
+          name: "home",
+          components: {
+              header: AppHeader,
+              default: Home,
+              footer: AppFooter
+          }
+      },
     {
-      path: "/",
-      name: "business",
+      path: "/notice",
+      name: "notice",
       components: {
         header: AppHeader,
-        default: Business,
+        default: Notice,
         footer: AppFooter
       }
     },
