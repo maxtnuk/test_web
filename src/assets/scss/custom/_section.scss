@@ -187,6 +187,7 @@
         .span-200 {
             height: 200px;
             width: 200px;
+
         }
 
         .span-150 {
@@ -195,8 +196,15 @@
         }
 
         .span-100 {
-            height: 100px;
-            width: 100px;
+            width: 0;
+            height: 0;
+
+            border-radius: 0%;
+
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+
+            border-bottom: 100px solid black;
         }
 
         .span-75 {
@@ -212,13 +220,13 @@
         :nth-child(1) {
             left: -4%;
             bottom: auto;
-            background: rgba(255, 255, 255, .1);
+            background: rgba(42, 26, 150, .9);
         }
 
         :nth-child(2) {
             right: 4%;
             top: 10%;
-            background: rgba(255, 255, 255, .1);
+            background: rgba(244, 89, 5, .5);
         }
 
         :nth-child(3) {
@@ -230,14 +238,14 @@
         :nth-child(4) {
             top: 320px;
             right: 7%;
-            background: rgba(255, 255, 255, .15);
+            background: rgba(251, 146, 36, .9);
         }
 
         :nth-child(5) {
             top: 38%;
             left: 1%;
             right: auto;
-            background: rgba(255, 255, 255, .05);
+            background: rgba(251, 229, 85, .8);
         }
 
         :nth-child(6) {
@@ -246,13 +254,13 @@
             top: 44%;
             left: 10%;
             right: auto;
-            background: rgba(255, 255, 255, .15);
+            background: rgba(11,152,34, 0.7);
         }
 
         :nth-child(7) {
             bottom: 50%;
             right: 36%;
-            background: rgba(255, 255, 255, .04);
+            background: rgb(221,0,102);
         }
 
         :nth-child(8) {
@@ -288,7 +296,7 @@
 
         // shape color variations
         &.shape-primary {
-            background: linear-gradient(150deg, shapes-primary-color("step-1-gradient-bg") 15%, shapes-primary-color("step-2-gradient-bg") 70%, shapes-primary-color("step-3-gradient-bg") 94%);
+            background: shapes-primary-color("real-default-color")
         }
 
         &.shape-default {

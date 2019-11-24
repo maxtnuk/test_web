@@ -2,10 +2,12 @@ import Vue from "vue";
 import Router from "vue-router";
 import AppHeader from "./layout/AppHeader";
 import AppFooter from "./layout/AppFooter";
-import Components from "./views/Components.vue";
-import Landing from "./views/Landing.vue";
-import Login from "./views/Login.vue";
-import Register from "./views/Register.vue";
+
+
+import Business from "./views/Business.vue";
+import Portfolio from "./views/Portfolio.vue";
+import Introduce from "./views/Introduce.vue";
+import Location from "./views/Location.vue";
 import Profile from "./views/Profile.vue";
 
 Vue.use(Router);
@@ -15,46 +17,37 @@ export default new Router({
   routes: [
     {
       path: "/",
-      name: "components",
+      name: "business",
       components: {
         header: AppHeader,
-        default: Components,
+        default: Business,
         footer: AppFooter
       }
     },
     {
-      path: "/landing",
-      name: "landing",
+      path: "/portfolio",
+      name: "portfolio",
       components: {
         header: AppHeader,
-        default: Landing,
+        default: Portfolio,
         footer: AppFooter
       }
     },
     {
-      path: "/login",
-      name: "login",
+      path: "/introduce",
+      name: "introduce",
       components: {
         header: AppHeader,
-        default: Login,
+        default: Introduce,
         footer: AppFooter
       }
     },
     {
-      path: "/register",
-      name: "register",
+      path: "/location",
+      name: "location",
       components: {
         header: AppHeader,
-        default: Register,
-        footer: AppFooter
-      }
-    },
-    {
-      path: "/profile",
-      name: "profile",
-      components: {
-        header: AppHeader,
-        default: Profile,
+        default: Location,
         footer: AppFooter
       }
     }
