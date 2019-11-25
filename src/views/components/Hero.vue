@@ -14,7 +14,8 @@
                     <div class="col-lg-7 text-center pt-lg">
                         <img src="img/icons/common/squirrel.png" width="200px" height="200dpx">
                         <h1 class="site_name">Happy Daram</h1>
-                        <p class="lead text-white mt-4 mb-5">세상에서 가장 특별한 다람쥐들</p>
+                        <p class="lead text-white mt-4 mb-5">게임/콘텐츠 제작 기업 <br>
+                            행복한 다람쥐단</p>
                     </div>
                 </div>
             </div>
