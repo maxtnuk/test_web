@@ -2,7 +2,7 @@
     <header class="header-global">
         <base-nav class="navbar-main" transparent type="" effect="light" expand>
             <router-link slot="brand" class="navbar-brand mr-lg-5" to="/">
-                <h1 class="site_name">Happy Daram</h1>
+                <h1 class="foreground site_name">Happy Daram</h1>
             </router-link>
 
             <div class="row" slot="content-header" slot-scope="{closeMenu}">
@@ -14,8 +14,8 @@
                 </div>
             </div>
 
-            <div v-for="item in menuitems" :key="item.title">
-                <router-link class="view_link" :to="item.path">{{item.title}}</router-link>
+            <div class="" v-for="item in menuitems" :key="item.title">
+                <router-link class="fore_link view_link" :to="item.path">{{item.title}}</router-link>
             </div>
             <ul class="navbar-nav align-items-lg-center ml-lg-auto">
                 <li class="nav-item">
@@ -74,12 +74,8 @@ export default {
 };
 </script>
 <style>
-    .site_name{
-        color: #FFFFFF;
-    }
-
-    .view_link{
-        color: #FFFFFF;
-        padding-right: 10px;
-    }
+   .fore_link{
+       color: #adb5bd;
+       padding: 20px;
+   }
 </style>

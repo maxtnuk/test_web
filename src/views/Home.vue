@@ -1,20 +1,22 @@
 <template>
     <div>
         <hero></hero>
-        <div id="main_momentum">
-            <h1  class="display-1">What we do</h1>
-            <p  class="lead">
-                행복한 다람쥐단에서는 2가지 주력 사업을 기반으로<br>
-                좋은 컨텐츠를 제작하기위해 다양한 사업을 추진하고 있습니다
-            </p>
-            <div class="m_container">
-                <div class="m_items">
-                    <h1 class="display-3">Game</h1>
-                    <img src="img/icons/common/game.png" width="200px" height=auto>
-                </div>
-                <div class="m_items">
-                    <h1 class="display-3">VR</h1>
-                    <img src="img/icons/common/virtual-reality.svg" width="150px" height=auto>
+        <div class="container">
+            <div class="justify-content-center">
+                <h1  id="top_head" class="display-1">What we do</h1>
+                <p  class="lead">
+                    행복한 다람쥐단에서는 2가지 주력 사업을 기반으로<br>
+                    좋은 컨텐츠를 제작하기위해 다양한 사업을 추진하고 있습니다
+                </p>
+                <div class="row">
+                    <div class="m_items">
+                        <h1 class="display-3">Game</h1>
+                        <img src="img/icons/common/game.png" width="200px" height=auto>
+                    </div>
+                    <div class="m_items">
+                        <h1 class="display-3">VR</h1>
+                        <img src="img/icons/common/virtual-reality.svg" width="150px" height=auto>
+                    </div>
                 </div>
             </div>
         </div>
@@ -49,19 +51,17 @@ export default {
 };
 </script>
 <style>
-    .m_container{
-        display: flex;
-        justify-content: center
+    #top_head {
+        padding-top: 20px;
     }
     .m_items{
         padding-top: 20px;
         padding-right: 100px;
         padding-left: 100px;
     }
-    #main_momentum{
-        padding-top: 20px;
+    .row{
         text-align: center;
-        align-items: center;
-        color: #000000;
+        justify-content: center;
+        padding-top: 10px;
     }
 </style>
