@@ -76,6 +76,6 @@ export default {
 <style>
    .fore_link{
        color: #adb5bd;
-       padding: 20px;
+       padding-right: 10px;
    }
 </style>
